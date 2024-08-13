@@ -103,32 +103,47 @@ for url in urls:
 #     "https://url2.com",
 #     # Add more URLs here
 # ]
+pyautogui.click(x=1681, y=397)  # Replace with actual coordinates
 for url in urls:
     # Open a new tab in your browser (assuming the browser is already open)
-    pyautogui.hotkey('ctrl', 't')
+    # pyautogui.hotkey('ctrl', 't')
+    # time.sleep(1)
+
+    
+    pyautogui.click(x=1681, y=397)  # Replace with actual coordinates
+    time.sleep(1)
+
+    pyautogui.click(x=1689, y=550)  # Replace with actual coordinates
+    #pyautogui.click(x=1689, y=550)  # Replace with actual coordinates
+    time.sleep(1)
+
+    pyautogui.click(x=1668, y=736)  # Replace with actual coordinates
     time.sleep(1)
 
     # Type the URL and press Enter
     pyautogui.write(url)
-    pyautogui.press('enter')
-    time.sleep(3)  # Wait for the page to load
+    # pyautogui.press('enter')
+    time.sleep(2)  # Wait for the page to load
 
-    # Click the first button (you'll need to know the exact screen position)
-    pyautogui.click(x=100, y=200)  # Replace with actual coordinates
+    pyautogui.click(x=2190, y=866)  # Replace with actual coordinates
     time.sleep(1)
 
-    # Click the second button
-    pyautogui.click(x=150, y=250)  # Replace with actual coordinates
-    time.sleep(1)
+    # # Click the first button (you'll need to know the exact screen position)
+    # pyautogui.click(x=100, y=200)  # Replace with actual coordinates
+    # time.sleep(1)
 
-    # Paste the URL in the text box (you'll need to know the screen position)
-    pyautogui.click(x=200, y=300)  # Replace with actual coordinates
-    pyautogui.write(url)
+    # # Click the second button
+    # pyautogui.click(x=150, y=250)  # Replace with actual coordinates
+    # time.sleep(1)
 
-    # Click the final submit button
-    pyautogui.click(x=250, y=350)  # Replace with actual coordinates
-    time.sleep(2)
+    # # Paste the URL in the text box (you'll need to know the screen position)
+    # pyautogui.click(x=200, y=300)  # Replace with actual coordinates
+    # pyautogui.write(url)
 
-    # Optional: Close the tab (if necessary)
-    pyautogui.hotkey('ctrl', 'w')
-    time.sleep(1)
+    # # Click the final submit button
+    # pyautogui.click(x=250, y=350)  # Replace with actual coordinates
+    # time.sleep(2)
+
+    # # Optional: Close the tab (if necessary)
+    # pyautogui.hotkey('ctrl', 'w')
+    # time.sleep(1)
